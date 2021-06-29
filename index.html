@@ -177,14 +177,14 @@
 .pointer {cursor: pointer;}
 </style>
 <head>
-	<title>MASTERHACK 7.55 (OFFLINE)</title>
+	<title>DarkFiveYTB 7.55 HOST (AUTOMÁTICO)</title>
 </head>
 	<br><br><br><br><br><br><br><br><br><br><br><br>
 	<body onload="go()" class="bg">
 		<script>
-			window.applicationCache.ondownloading=function(){document.getElementById("progress").innerHTML="<font color=\"red\">INSTALANDO CACHE OFFLINE...ESPERE!</font>";localStorage.isCached=false;};
+			window.applicationCache.ondownloading=function(){document.getElementById("progress").innerHTML="Instalando Caché Offline... <font color=\"white\"> Espere!</font>";localStorage.isCached=false;};
 			window.applicationCache.onprogress=function(a){document.getElementById("myBar").style.width=(Math.round(100*(a.loaded/a.total)))+"%";document.getElementById("myBar").innerHTML=(Math.round(100*(a.loaded/a.total)))+"%";};
-			window.applicationCache.oncached=function(){document.getElementById("progress").innerHTML="<font color=\"red\">CACHE CARGADO CON EXITO!";localStorage.isCached=true;setTimeout(function(){document.getElementById("progress").innerHTML="<font color=\"red\">DESACTIVE CONEXION A INTERNET Y VUELVA A CARGAR EL HACK"; }, 2600);};
+			window.applicationCache.oncached=function(){document.getElementById("progress").innerHTML="Caché <font color=\"white\">instalada</font> con éxito!";localStorage.isCached=true;setTimeout(function(){document.getElementById("progress").innerHTML="Salga presionando el botón <font color=\"white\">PS, desactive la conexión a internet</font> y vuelva para cargar el pirateo."; }, 2600);};
 		</script>
 		<script>
 			var width = 0;
@@ -214,18 +214,18 @@
 				var xhr = new XMLHttpRequest();
 				xhr.open('GET', lst[i], false);
 				xhr.send('');
-				scriptCode += xhr.responseText + '\n';  
+				scriptCode += xhr.responseText + '\n';
 			}
 		}
 		
 		function done(){
 			document.getElementById("myProgress").remove();
-			document.getElementById("progress").innerHTML="<font color=\"red\">HACK CARGADO CON EXITO! LANZANDO HEN 1.1...ESPERE</font>";
+			document.getElementById("progress").innerHTML="Carga del Pirateo Exitosa! Lanzando el GoldHen 1.1... Un momento ,Por favor <font color=\"white\">Espere!</font>";
 			preloadScripts(['preloader.js', 'goldhen11.js', 'loader.js']);
 
 			if(window.postPayload)
 				window.postPayload();
-			setTimeout(function(){document.getElementById("progress").innerHTML="<font color=\"red\"><b>HEN 1.1 CARGADO EXITOSAMENTE!</b></font><br><br>"; }, 7000);	
+			setTimeout(function(){document.getElementById("progress").innerHTML="<font color=\"white\"><b>GoldHen 1.1 Cargado exitosamente!</b></font><br><br>"; }, 7000);	
 		}
 		
 		window.midExploit = function()
@@ -238,7 +238,7 @@
 			setTimeout(function()
 			{	
 				eval.call(window, scriptCode);
-				if(main_ret == 0 || main_ret == 179) {done();}else{alert(El hackeo a fallado. Intente reiniciar utilizando el botón \"PS\" \luego intente cargarlo de nuevo.");}
+				if(main_ret == 0 || main_ret == 179) {done();}else{alert("Oh no!! El Pirateo a fallado. Intente reiniciar utilizando el botón \"PS\" \luego intente cargarlo de nuevo.");}
 			}, 100);
 
 		};
@@ -256,7 +256,7 @@
 		<script src="utils.js"></script>
 		<script src="int64.js"></script>
 		<script src="ps4.js"></script>
-		<h1 id="progress" class="titlehead"><font color="red">LANZANDO EL HACK...ESPERE!!!</font></h1>
+		<h1 id="progress" class="titlehead">Lanzando el webKit... Por favor, <font color="white">espere!</font></h1>
 		<button style="opacity:0" id="input1" onfocus="handle2()"></button>
 		<button style="opacity:0" id="input2"></button>
 		<button style="opacity:0" id="input3" onfocus="handle2()"></button>
