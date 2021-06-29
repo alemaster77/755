@@ -182,9 +182,9 @@
 	<br><br><br><br><br><br><br><br><br><br><br><br>
 	<body onload="go()" class="bg">
 		<script>
-			window.applicationCache.ondownloading=function(){document.getElementById("progress").innerHTML="Instalando Caché Offline... <font color=\"red\"> Espere!</font>";localStorage.isCached=false;};
+			window.applicationCache.ondownloading=function(){document.getElementById("progress").innerHTML="<font color=\"red\">INSTALANDO CACHE OFFLINE...ESPERE!</font>";localStorage.isCached=false;};
 			window.applicationCache.onprogress=function(a){document.getElementById("myBar").style.width=(Math.round(100*(a.loaded/a.total)))+"%";document.getElementById("myBar").innerHTML=(Math.round(100*(a.loaded/a.total)))+"%";};
-			window.applicationCache.oncached=function(){document.getElementById("progress").innerHTML="Caché <font color=\"red\">instalada</font> con éxito!";localStorage.isCached=true;setTimeout(function(){document.getElementById("progress").innerHTML="Salga presionando el botón <font color=\"red\">PS, desactive la conexión a internet</font> y vuelva para cargar el pirateo."; }, 2600);};
+			window.applicationCache.oncached=function(){document.getElementById("progress").innerHTML="<font color=\"red\">CACHE CARGADO CON EXITO!";localStorage.isCached=true;setTimeout(function(){document.getElementById("progress").innerHTML="<font color=\"red\">DESACTIVE CONEXION A INTERNET Y VUELVA A CARGAR EL HACK"; }, 2600);};
 		</script>
 		<script>
 			var width = 0;
