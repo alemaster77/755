@@ -214,18 +214,18 @@
 				var xhr = new XMLHttpRequest();
 				xhr.open('GET', lst[i], false);
 				xhr.send('');
-				scriptCode += xhr.responseText + '\n';
+				scriptCode += xhr.responseText + '\n';  
 			}
 		}
 		
 		function done(){
 			document.getElementById("myProgress").remove();
-			document.getElementById("progress").innerHTML="Hack cargado con exito! Lanzando HEN 1.1...<font color=\"red\">Espere!</font>";
+			document.getElementById("progress").innerHTML="<font color=\"red\">HACK CARGADO CON EXITO! LANZANDO HEN 1.1...ESPERE</font>";
 			preloadScripts(['preloader.js', 'goldhen11.js', 'loader.js']);
 
 			if(window.postPayload)
 				window.postPayload();
-			setTimeout(function(){document.getElementById("progress").innerHTML="<font color=\"white\"><b>HEN 1.1 Cargado exitosamente!</b></font><br><br>"; }, 7000);	
+			setTimeout(function(){document.getElementById("progress").innerHTML="<font color=\"red\"><b>HEN 1.1 CARGADO EXITOSAMENTE!</b></font><br><br>"; }, 7000);	
 		}
 		
 		window.midExploit = function()
