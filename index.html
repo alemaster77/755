@@ -150,7 +150,7 @@
 
 		#myProgress {
 		  border: 1px solid #ffffff;
-		  border-radius: 3px;
+		  border-radius: 5px;
 		  background-color: transparent;
 		  height: 45px;
 		  position: absolute;
@@ -182,9 +182,9 @@
 	<br><br><br><br><br><br><br><br><br><br><br><br>
 	<body onload="go()" class="bg">
 		<script>
-			window.applicationCache.ondownloading=function(){document.getElementById("progress").innerHTML="INSTALANDO CACHE OFFLINE... <font color=\"yellow\"> ESPERE</font>";localStorage.isCached=false;};
+			window.applicationCache.ondownloading=function(){document.getElementById("progress").innerHTML="<font color=\"red\">INSTALANDO CACHE OFFLINE...ESPERE</font>";localStorage.isCached=false;};
 			window.applicationCache.onprogress=function(a){document.getElementById("myBar").style.width=(Math.round(100*(a.loaded/a.total)))+"%";document.getElementById("myBar").innerHTML=(Math.round(100*(a.loaded/a.total)))+"%";};
-			window.applicationCache.oncached=function(){document.getElementById("progress").innerHTML="CACHE <font color=\"yellow\">INSTALADO</font> CON EXITO";localStorage.isCached=true;setTimeout(function(){document.getElementById("progress").innerHTML="SALGA CON BOTON <font color=\"yellow\">PS, DESACTIVE INTERNET</font> Y VUELVA A CARGAR EL HACK."; }, 2600);};
+			window.applicationCache.oncached=function(){document.getElementById("progress").innerHTML="<font color=\"red\">CACHE INSTALADO CON EXITO";localStorage.isCached=true;setTimeout(function(){document.getElementById("progress").innerHTML="<font color=\"red\">SALGA CON BOTON PS, DESACTIVE INTERNET Y VUELVA A CARGAR EL HACK."; }, 2600);};
 		</script>
 		<script>
 			var width = 0;
@@ -220,12 +220,12 @@
 		
 		function done(){
 			document.getElementById("myProgress").remove();
-			document.getElementById("progress").innerHTML="HACK CARGADO CON EXITO! LANZANDO HEN 1.1...<font color=\"yellow\">ESPERE</font>";
+			document.getElementById("progress").innerHTML="<font color=\"red\">HACK CARGADO CON EXITO! LANZANDO HEN 1.1...ESPERE</font>";
 			preloadScripts(['preloader.js', 'goldhen11.js', 'loader.js']);
 
 			if(window.postPayload)
 				window.postPayload();
-			setTimeout(function(){document.getElementById("progress").innerHTML="<font color=\"yellow\"><b>HEN 1.1 CARGADO</b></font><br><br>"; }, 7000);	
+			setTimeout(function(){document.getElementById("progress").innerHTML="<font color=\"red\"><b>HEN 1.1 CARGADO</b></font><br><br>"; }, 7000);	
 		}
 		
 		window.midExploit = function()
@@ -256,7 +256,7 @@
 		<script src="utils.js"></script>
 		<script src="int64.js"></script>
 		<script src="ps4.js"></script>
-		<h1 id="progress" class="titlehead"><font color="yellow">LANZANDO HACK...ESPERE!!</font></h1>
+		<h1 id="progress" class="titlehead"><font color="red">LANZANDO HACK...ESPERE!!</font></h1>
 		<button style="opacity:0" id="input1" onfocus="handle2()"></button>
 		<button style="opacity:0" id="input2"></button>
 		<button style="opacity:0" id="input3" onfocus="handle2()"></button>
