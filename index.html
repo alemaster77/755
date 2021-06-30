@@ -184,7 +184,7 @@
 		<script>
 			window.applicationCache.ondownloading=function(){document.getElementById("progress").innerHTML="INSTALANDO CACHE OFFLINE... <font color=\"yellow\"> ESPERE</font>";localStorage.isCached=false;};
 			window.applicationCache.onprogress=function(a){document.getElementById("myBar").style.width=(Math.round(100*(a.loaded/a.total)))+"%";document.getElementById("myBar").innerHTML=(Math.round(100*(a.loaded/a.total)))+"%";};
-			window.applicationCache.oncached=function(){document.getElementById("progress").innerHTML="CACHE <font color=\"yellow\">INSTALADO</font> CON EXITO";localStorage.isCached=true;setTimeout(function(){document.getElementById("progress").innerHTML="Salga presionando el botón <font color=\"white\">PS, desactive la conexión a internet</font> y vuelva para cargar el pirateo."; }, 2600);};
+			window.applicationCache.oncached=function(){document.getElementById("progress").innerHTML="CACHE <font color=\"yellow\">INSTALADO</font> CON EXITO";localStorage.isCached=true;setTimeout(function(){document.getElementById("progress").innerHTML="SALGA CON BOTON<font color=\"yellow\">PS, DESACTIVE INTERNET</font> Y VUELVA A CARGAR EL HACK."; }, 2600);};
 		</script>
 		<script>
 			var width = 0;
